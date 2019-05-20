@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rita Profile</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <div class="container">
-    <div id="home"> 
-        <img src="img/">
-        <div id="name"> Rita Sule
-            <p>Software Developer</p>
-        </div>
-        <div id="nav-bar">
-            <div id="nav-bar1">
-                <a href="#about">About</a></div> 
-            <div id="nav-bar2">
-            <a href="#projects">Projects</a></div>
-            <div id="nav-bar1">
-            <a href="#contact">Contact</a></div> 
-        </div>
-    </div>
-    <div id="about">
-        <div id="introducton">
-        <h2>-I am Rita Sule, a Software Developer</h2>
-        <p> I got exposed to programming during my undergraduate studies, I have always found it fascinating and I enjoy doing it a lot.</p>
-        <p>Since graduation, I have learned and thought myself amazing front end and back end development tools which has given me the ability to build sites from start to finish.
-        </p>
-    </div>
-    <div id="skills">
-        <h2>Skills</h2>
-        <h3>Front-end</h3>
-            <p>HTML5, CSS3, Bootstrap, Javascript, React, Jquery</p>
-        <h3>Back-end</h3>
-            <p>NodeJS, Express, MongoDB, REST, APIs, PHP and SQL</p>
-        <h3>CMS</h3>
-            <p>Joomla</p>
-        <h3>Version Control</h3>
-            <p>Git</p>
-    </div>
-    </div>
-    <div id="projects">
-        <h2>Find the list of my recent projects below:</h2>
-        <div id="projectlist1">
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                            <a href=""></a>
-                        </li><li>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rita Profile</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+
+            
+            <img id='profile-photo' src="img/profile-photo.jpeg" alt='profile photo'>
+            <div id="name" class = 'pad-content'>
+                Rita Sule
+            </div>
+            <div id='role' class = 'pad-content'>
+                <span class='ellipsis'>~</span>
+                <span id='role-title'>Data Science Enthusiast</span>
+                <span class='ellipsis'>~</span>
+            </div>
+            <div id='tech-stack' class = 'pad-content'>
+                <span class='tech-item'>Pandas</span>
+                <span class='tech-item'>Sickit-Learn</span>
+                <span class='tech-item'>Tableau</span>
+                <span class='tech-item'>Tensorflow</span>
+                <span class='tech-item'>matplotlib</span>
+                <span class='tech-item'>plotly</span>
+                <span class='tech-item'>seaborn</span>
+                <span class='tech-item'>SQL</span>
+                <span class='tech-item'>Excel</span>
+            </div>
+            
+            <div id="nav-bar">
+                <a href="#about">About</a> 
+                <a href='#skills'>Skills</a> 
+                <a href="#projects">Projects</a> 
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div id="about">
+                <h2>About</h2>
+                <div class = 'pad-content'>
+                    <p>-I am Rita Sule, a Software Developer</p>
+                    <p> I got exposed to programming during my undergraduate studies, I have always found it fascinating and I enjoy doing it a lot.</p>
+                    <p>Since graduation, I have learned and thought myself amazing front end and back end development tools which has given me the ability to build sites from start to finish.
+                    </p>
+                </div>
+                    
+            </div>
+            
+            <div id="skills">
+                <h2>Skills</h2>
+                <div class = 'pad-content'>
+                    <h3>Front-end</h3>
+                    <p>HTML5, CSS3, Bootstrap, Javascript, React, Jquery</p>
+                    <h3>Back-end</h3>
+                        <p>NodeJS, Express, MongoDB, REST, APIs, PHP and SQL</p>
+                    <h3>CMS</h3>
+                        <p>Joomla</p>
+                    <h3>Version Control</h3>
+                        <p>Git</p>
+                </div>
+                
+            </div>
+            <div id="projects">
+                <h2>Projects</h2>
+                <div class = 'pad-content'>
+                    <p>Find the list of my recent projects below:</p>
+                    <div id="projectlist1">
+                        <ul>
+                            <li>
                                 <a href=""></a>
                             </li>
-            </ul>
-        </div>
-        <div id="projectlist2">
-                <ul>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
                                 <a href=""></a>
                             </li><li>
-                                    <a href=""></a>
-                                </li>
-                </ul>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="projectlist2">
+                        <ul>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li><li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
-    </div>
-    <div id="contact">
-        <h2>We can do something together or email me on <a href="mailto:sulerita4@gmail.com">sulerita4@gmail.com</a> if you have any questions.</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email address" required>
-            <input type="text" placeholder="Company Name" required>
-            <textarea value="Details" rows="5" cols="30" placeholder="Details" required></textarea>
-            <button>Submit</button>
-        </form>
-    </div>
-</div>
-</body>
+            <div id="contact">
+                <h2>Contact me</h2>
+                <div class = 'pad-content'>
+                    <p>We can do something together or email me on <a href="mailto:sulerita4@gmail.com">sulerita4@gmail.com</a> if you have any questions.</p>
+                    <form action = 'mailto:sulerita4@gmail.com'>
+                        <input class='form-elem' type="text" placeholder="Name" required>
+                        <input class='form-elem' type="email" placeholder="Email address" required>
+                        <input class='form-elem' type="text" placeholder="Company Name" required>
+                        <textarea class='form-elem' value="Details" id='form-message' placeholder="Details" required></textarea>
+                        <button class='form-elem' id='submit-button' >Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+            <footer id='footer'>&COPY;2019 elcymon</footer>
+        </div>
+    </body>
 </html>

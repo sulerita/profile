@@ -1,3 +1,160 @@
-#contact,#about,#projects {
-    min-height: 600px;
+/* div:nth-child(even) {
+    background: rgb(175, 45, 45);
+} */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    font-size: 1.0em;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+#profile-photo {
+    grid-area: profile-photo;
+    display: block;
+    width: 100%;
+    background-color: #ddd;
+}
+#name {
+    grid-area: profile-photo;
+    align-self: end;
+    background-color: rgba(100, 100, 100,0.9);
+    font-family: 'Courier New', Courier, monospace;
+    color: peru;
+    font-weight: 900;
+    font-size: 2em;
+    padding: 10px;
+}
+#role {
+    grid-area: role;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ddd;
+    /* margin: 0px; */
+}
+#tech-stack {
+    grid-area: tech-stack;
+    line-height: 2em;
+    text-align: center;
+    background-color: #ddd;
+    /* margin: 0px; */
+}
+.ellipsis {
+    font-size: 2em;
+    align-self: center;
+    padding: 0px 10px;
+}
+#role-title {
+    font-style: italic;
+}
+.tech-item:nth-child(odd) {
+    background-color: coral;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 2em 0em;
+}
+.tech-item:nth-child(even) {
+    background-color: darkgoldenrod;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 2em 0em;
+}
+#nav-bar {
+    grid-area: nav-bar;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 1.5em;
+    background-color: #ddd;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#nav-bar > a {
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid black;
+    text-align: center;
+    /* background-color: red; */
+}
+#nav-bar > a:first-child {
+    border: 0px solid black;
+}
+#about {
+    grid-area: about;
+}
+#skills {
+    grid-area: skills;
+}
+#projects {
+    grid-area: projects;
+}
+#contact {
+    grid-area: contact;
+}
+#footer {
+    grid-area: footer;
+}
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'profile-photo profile-photo'
+        'role role'
+        'tech-stack tech-stack'
+        'nav-bar nav-bar'
+        'about about'
+        'skills skills'
+        'projects projects'
+        'contact contact'
+        'footer footer';
+    /* width: 100vw; */
+    max-width: 500px;
+    /* padding: 10px; */
+    margin: auto;
+}
+#contact,#skills,#about,#projects {
+    min-height: 100vh;
+    padding-top: 1.0em;
+}
+h2 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #ddd;
+       
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+.form-elem {
+    height: 1.2em;
+    width: 90%;
+}
+#form-message {
+    height: 15vh;
+}
+#submit-button {
+    width: 5em;
+    height: auto;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5%;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+}
+
+.pad-content {
+    padding: 0px 10px;
 }
